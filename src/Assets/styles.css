@@ -1,0 +1,104 @@
+html, body, #root, #root > .App{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFC107;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+}
+.img{
+    border-radius: 5px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    background-color: #FFC107;
+    padding: 10px 25px;
+    border-radius: 7px;
+    color: #313131;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btn:hover, .btn:focus, .btn:active{
+    background-color: rgb(255, 166, 0);
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 25px;
+    padding: 30px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 45%;
+    margin: 5px;
+    height: 100px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    height: fit-content;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.24);
+    margin: 16px 8px;
+    color: #313131;
+}
+.card .nome{
+    font-size: 16px;
+    font-weight: bold;
+    color: #313131;
+    margin-bottom: 8px;
+}
+.card .btn {
+    position: absolute;
+    bottom: 30px;
+    right: 16px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.card .sobre{
+    display: flex;
+    align-items: flex-end;
+}
+
+.sobre article{
+    margin: 0;
+    padding:  0 16px;
+}
+
+.card h2{
+    text-align: center;
+}
+.btn-voltar{
+    border-radius: 5px !important;
+    bottom: unset !important;
+    right: unset !important;
+}
